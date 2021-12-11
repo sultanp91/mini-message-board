@@ -5,11 +5,17 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <h1><%= title %></h1>
+    <h1 class="header"><%= title %></h1>
 
     <% if (messages.length > 0) { %> <% messages.forEach(message => { %>
-    <p><%=message.text %></p>
-
+    <div class="message">
+      <p class="message__text"><%=message.text %></p>
+      <p class="message__user">
+        By <%= message.user %> on <%= message.added %>
+      </p>
+    </div>
     <% }); %> <% }%>
+
+    <a href="/new"> Add new messages </a>
   </body>
 </html>
