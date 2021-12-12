@@ -4,25 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/new-style.css" />
     <title><% title %></title>
   </head>
   <body>
-    <h1><%= title %></h1>
+    <header><h1><%= title %></h1></header>
+
     <form class="form" action="/new" method="post">
       <label for="messageText"
         >Message:
         <textarea
           name="messageText"
           id="messageText"
-          cols="30"
+          cols="50"
           rows="10"
+          required
         ></textarea>
       </label>
       <label for="messageUser"
         >Name:
-        <input type="text" name="messageUser" id="messageUser" />
+        <input type="text" name="messageUser" id="messageUser" required />
       </label>
       <button class="form__button" type="submit">Add new message</button>
     </form>
+
+    <a href="/">View messages </a>
   </body>
 </html>
