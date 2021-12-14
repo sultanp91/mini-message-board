@@ -53,4 +53,27 @@ button {
   text-align: center;
   padding: 1.5rem 0;
   margin: 2rem 0;
+  font-size: 1.8rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: #ef233c;
+  color: #fff;
+}
+
+a:link,
+a:visited {
+  display: block;
+  text-align: center;
+  width: 60rem;
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 1rem 0;
+  border-radius: 10px;
+  background-color: #ef233c;
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.2rem;
+  font-weight: 500;
+  text-align: center;
 }
